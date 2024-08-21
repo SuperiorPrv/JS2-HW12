@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+.block1{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(147, 147, 255);
+}
+.block1_buttons{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+.addNewUserButton{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px black;
+}
+.addNewUserButton:hover{
+    background-color: darkblue;
+    transition: 0.5s;
+}
+.lightButton{
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(208, 242, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px blue;
+    cursor: pointer;
+}
+.lightButton:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.darkButton{
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    color: white;
+    cursor: pointer;
+}
+.darkButton:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.block2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    padding: 10px 0px;
+}
+.block2 fieldset{
+    border-radius: 20px;
+}
+.block2 select{
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+.block2 input{
+    height: 40px;
+    margin-top: 5px;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 5px blue;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+tr{
+    border: 2px solid rgb(197, 197, 197);
+    height: 70px;
+}
+.td1{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.td1_1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+.td1_2{
+    margin-left: 20px;
+}
+td{
+    text-align: center;
+}
+.th1{
+    width: 400px;
+}
+
+.addUserDialog{
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    text-align: center;
+}
+.top_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.addUserDialog input{
+    width: 94%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7.5px black;
+}
+.saveAddUserButton{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(46, 46, 250);
+    border-radius: 15px;
+    padding: 8px 16px;
+    background-color: rgb(46, 46, 250);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(46, 46, 250);
+    margin-top: 10px;
+}
+.saveAddUserButton:hover{
+    font-size: 22px;
+    transition: 0.5s;
+}
+.closeAddUserDialog{
+    font-size: 24px;
+    border: none;
+    background-color: red;
+    font-weight: 700;
+    color: white;
+    padding: 0px 11px;
+    border-radius: 50%;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.closeAddUserDialog:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+
+
+.editUserDialog{
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    text-align: center;
+}
+.top_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.editUserDialog input{
+    width: 94%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7.5px black;
+}
+.saveEditUserButton{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(46, 46, 250);
+    border-radius: 15px;
+    padding: 8px 16px;
+    background-color: rgb(46, 46, 250);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(46, 46, 250);
+    margin-top: 10px;
+}
+.saveEditUserButton:hover{
+    font-size: 22px;
+    transition: 0.5s;
+}
+.closeEditUserDialog{
+    font-size: 24px;
+    border: none;
+    background-color: red;
+    font-weight: 700;
+    color: white;
+    padding: 0px 11px;
+    border-radius: 50%;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.closeEditUserDialog:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+.moreAboutDialog{
+    margin: auto;
+    margin-right: 130px;
+    width: 90px;
+}
+.infoButton,.editButton,.deleteButton{
+    width: 100%;
+    padding: 5px 5px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.infoButton:hover,.editButton:hover,.deleteButton:hover{
+    box-shadow: 0px 0px 10px gray;
+    transition: 0.5s;
+}
+.closeMoreAboutDialog{
+    position: absolute;
+    top: 5px;
+    right: 5px; 
+    font-size: 10px;
+    font-weight: 900;
+    border: none;
+    padding: 3px 6px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.closeMoreAboutDialog:hover{
+    color: red;
+    box-shadow: 0px 0px 5px red;
+    transition: 0.5s;
+}
+.infoDialog{
+    margin: auto;
+    width: 250px;
+    text-align: center;
+}
+.infoDialog p{
+    color: rgb(83, 83, 83);
+}
+.infoBoxEmail{
+    margin-bottom: 20px;
+}
+.infoBoxAvatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.linelock{
+    margin-bottom: 10px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+.editButton1{
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px green;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.editButton1:hover{
+    background-color: white;
+    color: green;
+    box-shadow: 0px 0px 10px green;
+    transition: 0.5s;
+}
+.deleteButton1{
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px red;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.deleteButton1:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+.closeInfoDialog{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 3px 15px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+}
+.closeInfoDialog:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+
+.editUserDialog1{
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    text-align: center;
+}
+.top_1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.editUserDialog1 input{
+    width: 94%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7.5px black;
+}
+.saveEditUserButton1{
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid rgb(46, 46, 250);
+    border-radius: 15px;
+    padding: 8px 16px;
+    background-color: rgb(46, 46, 250);
+    color: white;
+    box-shadow: 0px 0px 10px rgb(46, 46, 250);
+    margin-top: 10px;
+}
+.saveEditUserButton1:hover{
+    font-size: 22px;
+    transition: 0.5s;
+}
+.closeEditUserDialog1{
+    font-size: 24px;
+    border: none;
+    background-color: red;
+    font-weight: 700;
+    color: white;
+    padding: 0px 11px;
+    border-radius: 50%;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.closeEditUserDialog1:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 10px red;
+    transition: 0.5s;
+}
+.btn--{
+    border: none;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+}
+.dark{
+    background-color: #333;
+    color: white;
+}

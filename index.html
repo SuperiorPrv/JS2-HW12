@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block1">
+        <h1>User List</h1>
+        <div class="block1_buttons">
+            <button class="addNewUserButton">+ NEW</button>
+            <button class="lightButton">Light</button>
+            <button class="darkButton">Dark</button>
+        </div>
+    </div>
+    <div class="block2">
+        <fieldset>
+            <legend>Status</legend>
+            <select name="" id="" class="selectStatus">
+                <option value="All">All status</option>
+                <option value="true">Active</option>
+                <option value="false">Inactive</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>City</legend>
+            <select name="" id="" class="selectLocation">
+                <option value="All">All Cities</option>
+                <option value="Dushanbe">Dushanbe</option>
+                <option value="Bokhtar">Bokhtar</option>
+                <option value="Khujand">Khujand</option>
+            </select>
+        </fieldset>
+        <input type="search" placeholder="Name, email, etc..." class="searchInput">
+    </div>
+    <table>
+        <thead>
+            <th class="th1">Name</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Phone</th>
+            <th>More</th>
+        </thead>
+        <tbody class="box">
+
+        </tbody>
+        <dialog class="addUserDialog">
+            <div class="top_1">
+                <h1>Add New User</h1>
+                <button class="closeAddUserDialog">X</button>
+            </div>
+            <form action="" class="addUserForm">
+                <input type="url" placeholder="Image URL:" name="addAvatar">
+                <input type="text" placeholder="Name:" name="addName">
+                <input type="email" placeholder="Email:" name="addEmail">
+                <input type="text" placeholder="Location:" name="addLocation">
+                <input type="tel" placeholder="Phone:" name="addPhone">
+                <button type="submit" class="saveAddUserButton">Save</button>
+            </form>
+        </dialog>
+        <dialog class="moreAboutDialog">
+            <button class="infoButton">View Profile</button>
+            <button class="editButton">Edit</button>
+            <button class="deleteButton">Delete</button>
+            <button class="closeMoreAboutDialog">X</button>
+            <dialog class="editUserDialog">
+                <div class="top_1">
+                    <h1>Edit User</h1>
+                    <button class="closeEditUserDialog">X</button>
+                </div>
+                <form action="" class="editUserForm">
+                    <input type="url" placeholder="Image URL:" name="editAvatar">
+                    <input type="text" placeholder="Name:" name="editName">
+                    <input type="email" placeholder="Email:" name="editEmail">
+                    <input type="text" placeholder="Location:" name="editLocation">
+                    <input type="tel" placeholder="Phone:" name="editPhone">
+                    <button type="submit" class="saveEditUserButton">Edit</button>
+                </form>
+            </dialog>
+            <dialog class="infoDialog">
+                <div class="top_1">
+                    <button class="closeInfoDialog">X</button>
+                    <h1>User Info</h1>
+                </div>
+                <div class="infoBox">
+                    <img src="" alt="" class="infoBoxAvatar">
+                    <h2 class="infoBoxName"></h2>
+                    <p class="infoBoxEmail"></p>
+                    <div class="lineblock">
+                        <div class="line">
+                            <span>City:</span>
+                            <span class="infoBoxCity"></span>
+                        </div>
+                        <div class="line">
+                            <span>Status:</span>
+                            <span class="infoBoxStatus"></span>
+                        </div>
+                        <div class="line">
+                            <span>Phone:</span>
+                            <span class="infoBoxPhone"></span>
+                        </div>
+                        <br>
+                        <button class="editButton1">Edit</button>
+                        <dialog class="editUserDialog1">
+                            <div class="top_1">
+                                <h1>Edit User</h1>
+                                <button class="closeEditUserDialog1">X</button>
+                            </div>
+                            <form action="" class="editUserForm1">
+                                <input type="url" placeholder="Image URL:" name="editAvatar">
+                                <input type="text" placeholder="Name:" name="editName">
+                                <input type="email" placeholder="Email:" name="editEmail">
+                                <input type="text" placeholder="Location:" name="editLocation">
+                                <input type="tel" placeholder="Phone:" name="editPhone">
+                                <button type="submit" class="saveEditUserButton1">Edit</button>
+                            </form>
+                        </dialog>
+                        <button class="deleteButton1">Delete</button>
+                    </div>
+                </div>
+            </dialog>
+        </dialog>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
